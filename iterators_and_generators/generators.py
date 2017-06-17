@@ -1,6 +1,6 @@
 #!/usr/local/bin/python3
 # use generator to implement custom iteration pattern
-# generator functions will only run in response to an iterationG
+# generator functions will only run in response to an iteration
 
 # produce a range of floating point numbers
 def float_range(start, stop, increment):
