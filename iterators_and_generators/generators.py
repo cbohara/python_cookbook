@@ -26,6 +26,6 @@ def countdown(n):
 c = countdown(3)
 print(c)
 # generator functions only run in response to next function
-next(c)
-next(c)
-next(c)
+print(next(c))
+print(next(c))
+print(next(c))
