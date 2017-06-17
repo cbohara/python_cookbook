@@ -25,3 +25,17 @@ if __name__ == "__main__":
                 print(pline, end='')
             print(line, end='')
             print('-' * 20)
+
+############################################################################################
+# in general you can use deque to get an unbounded queue that you can be append at either end
+q = deque()
+q.append(1)
+q.append(2)
+q.append(3)
+# deque([1, 2, 3])
+q.appendleft(1)
+# deque([1, 1, 2, 3])
+q.pop()
+# deque([1, 1, 2])
+p.popleft()
+# deque([1, 2])
