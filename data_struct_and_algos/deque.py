@@ -1,4 +1,5 @@
 #!/usr/local/bin/python3
+# deque is essentially a doubly-linked list
 from collections import deque
 
 # perform simple text match and yield matching line along with previous N lines
@@ -28,6 +29,9 @@ if __name__ == "__main__":
 
 ############################################################################################
 # in general you can use deque to get an unbounded queue that you can be append at either end
+# adding or popping items from either end of the queue has O(1) complexity
+# unlike O(n) for altering a list
+
 q = deque()
 q.append(1)
 q.append(2)
@@ -35,6 +39,7 @@ q.append(3)
 # deque([1, 2, 3])
 q.appendleft(1)
 # deque([1, 1, 2, 3])
+
 q.pop()
 # deque([1, 1, 2])
 p.popleft()
