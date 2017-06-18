@@ -1,10 +1,9 @@
 #!/usr/local/bin/python3
-# THIS LESSON IS MORE THEORETICAL VS PRACTICAL
-# better to use sorted() 
-
 # heaps are binary trees - each parent node has a value less than or equal to any of its children
 import heapq
 
+# BETTER TO USE SORTED() if you want to get the min or max elements from a list
+# this is more theoretical vs practical
 # you want to make a list of the largest and smallest N items in a collection
 nums = [1, 8, 2, 23, 7, -4, 18, 23, 42, 37, 2]
 print(heapq.nlargest(3, nums))
@@ -28,4 +27,3 @@ print(expensive)
 nums = [1, 8, 2, 23, 7, -4, 18, 23, 42, 37, 2]
 heap = heapq.heapify(nums)
 # [-4, 2, 1, 23, 7, 2, 18, 23, 42, 37, 8]
-
