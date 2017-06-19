@@ -5,8 +5,11 @@
 items = [2, 4, 6, 8, 1, 3, 5, 7]
 evens = slice(0, 4)
 print(items[evens])
-odds = slice(4, 8)
+
+# equivalent to [4:]
+odds = slice(4, None)
 print(items[odds])
+
 del items[evens]
 print(items)
 
